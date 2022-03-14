@@ -3,36 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <title>Abby Castelow</title>
-    <!--Link your CSS assets <link rel="stylesheet" href="./assets/css/style.css">-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body>
     <header>
-      <!--Maybe change <header> to <menu>-->
-      <h1 id="homelogo" href="">AC/JP</h1>
+      <!--May need to add div sections to help style-->
+      <a id="homelogo" href="">AC/JP</a>
       <!--Change to a logo that links to home page
         to do this, change h1 to a element and add link
         then css .homelogo {background: url(images/imagename.pgn [or wherever else the image is])} -->
 
       <nav>
-        <a rel="projects" href="">Projects</a>
-        <a rel="skills" href="">Skills</a>
-        <a rel="bio" href="">About</a>
-        <a rel="contact" href="">Contact</a>
+        <ul>
+          <li><a rel="projects" href="">Projects</a></li>
+          <li><a rel="skills" href="">Skills</a></li>
+          <li><a rel="bio" href="">About</a></li>
+          <li><a rel="contact" href="">Contact</a></li>
+          <li>
+            <!--addes a new section next to buttons that is separated a little-->
+            <!--Change this section to a gear icon that opens when you click it-->
+            <ul class="settings">
+              Settings
+              <li class="LightDark">L/D</li>
+              <!--light/dark mode toggle, change icon-->
+
+              <!--<li><a>iff adding links</a></li>-->
+              <!--Use this section for things like sound on/off toggle, 
+                and some of the fun things I was planning-->
+              <!--maybe add a color palette changer button here-->
+            </ul>
+          </li>
+        </ul>
         <!--Add links " href="linkhere"" -->
         <!--Add icons and links for some social media-->
       </nav>
     </header>
 
-    <div class="outerbox">
+    <div class="contentOut">
       <!--if I want to add something outside the main page elements, add extra div here
-        example: I see people add the html and body script in the background here.-->
+        example: I see people add the /html and body script in the background here.
+        see people utilizine ::before and ::after to add <letters> and </letters> before and after
+        sections on the web page
+      if not, remove contentOut and change contentIn to just content-->
 
-      <div class="innerbox">
-        <!--Add Banner-->
+      <div class="contentIn">
         <section class="Banner">
-          <h1>Hi, I'm Abby!</h1>
-          <h2>Full Stack Developer</h2>
+          <!--may need to mess with divs here to help placement-->
+          <div class="bannerbox">
+            <!--may be able to remove-->
+            <div class="banneritem">
+              <!--may be able to remove-->
+              <div class="bannertext">
+                <h1>Hi, I'm Abby!</h1>
+                <p>Full Stack Developer</p>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section class="Projects">
@@ -61,7 +88,7 @@
         <section class="Contact">
           <h2>Resume</h2>
           <!--Add resume link-->
-          <h2>Contact Info</h2>
+          <h2>Contact Me</h2>
           <!-- Add Contact Me Form -->
           <h2>You can also find me on:</h2>
           <!-- Add other Social Media Links "You can also find me on"-->
