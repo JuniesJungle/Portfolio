@@ -2,44 +2,89 @@
 <html lang="en-US">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Abby Castelow</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
+
     <script src="javascript.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!--ordering is important, html will read from top to bottom.
+    So for styling, I want Bulma to go first, and them my js and css after
+    So that my changes take place second and cover any Bulma styling I want changed-->
   </head>
 
-  <body>
-    <header>
+  <body class="has-navbar-fixed-top">
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          AC/JP
+          <!--add href="" in <a> to link home-->
+          <!--<img src="" width="112" height="28"> to add logo here-->
+        </a>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
       <!--May need to add div sections to help style-->
-      <a id="homelogo" href="">AC/JP</a>
       <!--Change to a logo that links to home page
         to do this, change h1 to a element and add link
         then css .homelogo {background: url(images/imagename.pgn [or wherever else the image is])} -->
 
-      <nav>
-        <ul>
-          <li><a rel="projects" href="">Projects</a></li>
-          <li><a rel="skills" href="">Skills</a></li>
-          <li><a rel="bio" href="">About</a></li>
-          <li><a rel="contact" href="">Contact</a></li>
-          <li>
-            <!--addes a new section next to buttons that is separated a little-->
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item">
+            <button class="button" rel="Projects" href="">Projects</button></a
+          >
+          <a class="navbar-item">
+            <button class="button" rel="Skills" href="">Skills</button></a
+          >
+          <a class="navbar-item">
+            <button class="button" rel="About" href="">About</button></a
+          >
+          <a class="navbar-item">
+            <button class="button" rel="Contact" href="">Contact</button></a
+          >
+          <div class="navbar-item">
+            <a class="navbar-link dropdown button" onclick="myFunction()"
+              >Settings</a
+            >
+            <div class="navbar-dropdown" id="myDropdown">
+              <a class="navbar-item" href="Mode">L/D Mode</a>
+              <a class="navbar-item" href="#">Other</a>
+            </div>
             <!--Change this section to a gear icon that opens when you click it-->
-            <ul class="settings">
-              Settings
-              <li class="LightDark">L/D</li>
-              <!--light/dark mode toggle, change icon-->
+            <!--light/dark mode toggle, change icon-->
+            <!--Use this section for things like sound on/off toggle, 
+                    and some of the fun things I was planning-->
+            <!--maybe add a color palette changer button here-->
+          </div>
+        </div>
+      </div>
+    </nav>
 
-              <!--<li><a>iff adding links</a></li>-->
-              <!--Use this section for things like sound on/off toggle, 
-                and some of the fun things I was planning-->
-              <!--maybe add a color palette changer button here-->
-            </ul>
-          </li>
-        </ul>
-        <!--Add links " href="linkhere"" -->
-        <!--Add icons and links for some social media-->
-      </nav>
-    </header>
+    <section class="hero is-link is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="title">Hi, I'm Abby!</p>
+          <p class="subtitle">Full Stack Developer</p>
+        </div>
+      </div>
+    </section>
 
     <div class="contentOut">
       <!--if I want to add something outside the main page elements, add extra div here
@@ -56,8 +101,7 @@
             <div class="banneritem">
               <!--may be able to remove-->
               <div class="bannertext">
-                <h1>Hi, I'm Abby!</h1>
-                <p>Full Stack Developer</p>
+                <h1></h1>
               </div>
             </div>
           </div>

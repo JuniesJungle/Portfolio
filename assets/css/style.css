@@ -1,0 +1,28 @@
+/*Using Bulma to assist with a lot of styling*/
+
+/*Nav Bar Styling*/
+.navbar-item .button {
+  border-color: rgba(255, 0, 0, 0);
+}
+
+#myDropdown {
+  background-color: #6a6363;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+#myDropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#myDropdown a:hover {
+  background-color: rgb(228, 162, 162);
+}
+
+/*Helps hide/show navbar dropdown menu*/
+.show {
+  display: block;
+}
