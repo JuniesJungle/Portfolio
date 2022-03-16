@@ -14,16 +14,25 @@
     <!--ordering is important, html will read from top to bottom.
     So for styling, I want Bulma to go first, and them my js and css after
     So that my changes take place second and cover any Bulma styling I want changed-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </head>
 
   <body class="has-navbar-fixed-top">
+    <!--Nav Bar-->
     <nav
       class="navbar is-fixed-top"
       role="navigation"
       aria-label="main navigation"
     >
       <div class="navbar-brand">
-        <a class="navbar-item">
+        <a class="navbar-item logo">
           AC/JP
           <!--add href="" in <a> to link home-->
           <!--<img src="" width="112" height="28"> to add logo here-->
@@ -60,9 +69,14 @@
             <button class="button" rel="Contact" href="">Contact</button></a
           >
           <div class="navbar-item">
-            <a class="navbar-link dropdown button" onclick="myFunction()"
-              >Settings</a
-            >
+            <a class="navbar-link dropdown button" onclick="myFunction()">
+              <i class="fas fas-settings"
+                ><ion-icon
+                  class="icon is-large"
+                  name="settings-outline"
+                ></ion-icon
+              ></i>
+            </a>
             <div class="navbar-dropdown" id="myDropdown">
               <a class="navbar-item" href="Mode">L/D Mode</a>
               <a class="navbar-item" href="#">Other</a>
@@ -77,89 +91,211 @@
       </div>
     </nav>
 
-    <section class="hero is-link is-fullheight">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <p class="title">Hi, I'm Abby!</p>
-          <p class="subtitle">Full Stack Developer</p>
-        </div>
-      </div>
-    </section>
-
+    <!--Everything between Nav and Footer-->
     <div class="contentOut">
       <!--if I want to add something outside the main page elements, add extra div here
         example: I see people add the /html and body script in the background here.
         see people utilizine ::before and ::after to add <letters> and </letters> before and after
         sections on the web page
       if not, remove contentOut and change contentIn to just content-->
-
       <div class="contentIn">
-        <section class="Banner">
-          <!--may need to mess with divs here to help placement-->
-          <div class="bannerbox">
-            <!--may be able to remove-->
-            <div class="banneritem">
-              <!--may be able to remove-->
-              <div class="bannertext">
-                <h1></h1>
-              </div>
+        <!--Banner-->
+        <section class="hero is-fullheight is-primary">
+          <div class="hero-body">
+            <div class="container has-text-centered">
+              <p class="title">Hi, I'm Abby!</p>
+              <p class="subtitle">Full Stack Developer</p>
             </div>
           </div>
         </section>
 
-        <section class="Projects">
-          <h2>Projects</h2>
-          <!--I'd like to add a fun thing to shuffle project pics/links-->
+        <!--Projects-->
+        <section class="hero is-large is-success">
+          <div class="hero-body">
+            <div class="container has-text-centered">
+              <p class="title">Projects</p>
+              <p class="subtitle">
+                samples
+                <!--I'd like to add a fun thing to shuffle project pics/links-->
+              </p>
+            </div>
+          </div>
         </section>
 
-        <section class="Skills">
-          <h2>Skills</h2>
+        <!--Skills-->
+        <section class="hero is-large is-warning">
+          <div class="hero-body">
+            <div class="container has-text-centered">
+              <p class="title">Skills</p>
+              <p class="subtitle">Programming</p>
+            </div>
+          </div>
         </section>
 
-        <section class="Bio">
-          <h2>About Me</h2>
-          <!-- A short description of me and my professional stoof, save the life story for the About Me Page-->
-          <!-- Image -->
-          <img src="https://via.placeholder.com/200" alt="Abby Castelow" />
-          <!-- Paragraph with embedded link -->
-          <p>
-            Hello! My name is Abby and I have a strong passion for learning and
-            am constantly finding new things to work on. I am on the search to
-            better myself and begin a career more in my field of interest to
-            work on programming.
-          </p>
+        <!--About Me-->
+        <section class="hero is-large is-info">
+          <div class="hero-body">
+            <div class="container has-text-centered">
+              <p class="title">About Me</p>
+              <img src="https://via.placeholder.com/200" alt="Abby Castelow" />
+              <!-- Paragraph with embedded link -->
+              <!-- A short description of me and my professional stoof, save the life story for the About Me Page-->
+
+              <p class="subtitle">
+                Hello! My name is Abby and I have a strong passion for learning
+                and am constantly finding new things to work on. I am on the
+                search to better myself and begin a career more in my field of
+                interest to work on programming.
+              </p>
+            </div>
+          </div>
         </section>
 
-        <section class="Contact">
-          <h2>Resume</h2>
-          <!--Add resume link-->
-          <h2>Contact Me</h2>
-          <!-- Add Contact Me Form -->
-          <h2>You can also find me on:</h2>
-          <!-- Add other Social Media Links "You can also find me on"-->
+        <!--Contact Me-->
+        <section class="hero is-medium is-dark">
+          <div class="hero-body">
+            <div class="container has-text-centered">
+              <div class="columns">
+                <div class="column is-two-thirds">
+                  <!--Contact Me Form -->
+                  <form class="box m-6">
+                    <p class="title has-text-primary">Contact Me</p>
+
+                    <div class="field is-horizontal">
+                      <div class="field-label is-normal">
+                        <label class="label">From</label>
+                      </div>
+                      <div class="field-body">
+                        <div class="field">
+                          <p class="control is-expanded has-icons-left">
+                            <input
+                              class="input"
+                              type="text"
+                              placeholder="Name"
+                            />
+                            <span class="icon is-small is-left">
+                              <i class="fas fa-user"
+                                ><ion-icon name="person-outline"></ion-icon
+                              ></i>
+                            </span>
+                          </p>
+                        </div>
+                        <div class="field">
+                          <p
+                            class="control is-expanded has-icons-left has-icons-right"
+                          >
+                            <input
+                              class="input is-success"
+                              type="email"
+                              placeholder="Email"
+                            />
+                            <span class="icon is-small is-left">
+                              <i class="fas fa-envelope"
+                                ><ion-icon name="mail-outline"></ion-icon
+                              ></i>
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                      <div class="field-label is-normal">
+                        <label class="label">Subject</label>
+                      </div>
+                      <div class="field-body">
+                        <div class="field">
+                          <div class="control">
+                            <input
+                              class="input"
+                              type="text"
+                              placeholder="Hello"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                      <div class="field-label is-normal">
+                        <label class="label">Question</label>
+                      </div>
+                      <div class="field-body">
+                        <div class="field">
+                          <div class="control">
+                            <textarea
+                              class="textarea"
+                              placeholder="How can I help?"
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                      <div class="field-body">
+                        <div class="field">
+                          <div class="control">
+                            <button class="button is-primary">
+                              Send message
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!--Resume and Social Media-->
+                <div class="column">
+                  <div class="block m-6">
+                    <p class="title">Resume</p>
+                    <button class="button">
+                      <ion-icon
+                        class="icon is-large"
+                        name="document-text-outline"
+                      ></ion-icon>
+                      <!--Add resume link/ability to download-->
+                    </button>
+                  </div>
+
+                  <div class="block m-6">
+                    <p class="subtitle">You can also find me on:</p>
+
+                    <p id="email">
+                      <strong>Email:</strong>
+                      <a href="mailto:juniper.peasley@gmail.com"
+                        >juniper.peasley@gmail.com</a
+                      >
+                    </p>
+                    <p id="GitHub">
+                      <strong>GitHub:</strong>
+                      <a href="https://github.com/JuniesJungle">JuniesJungle</a>
+                    </p>
+                    <p id="LinkedIn">
+                      <strong>LinkedIn:</strong>
+                      <a href="https://www.linkedin.com/in/abby-castelow/"
+                        >LinkedIn</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
+        
       </div>
-
       <!--if I want to add something outside the main page elements, add extra div here-->
     </div>
 
-    <footer>
-      <ul>
-        <li id="email">
-          <strong>Email:</strong>
-          <a href="mailto:juniper.peasley@gmail.com"
-            >juniper.peasley@gmail.com</a
-          >
-        </li>
-        <li id="GitHub">
-          <strong>GitHub:</strong>
-          <a href="https://github.com/JuniesJungle">JuniesJungle</a>
-        </li>
-        <li id="LinkedIn">
-          <strong>LinkedIn:</strong>
-          <a href="https://www.linkedin.com/in/abby-castelow/">LinkedIn</a>
-        </li>
-      </ul>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          Special Thanks to the creators of
+          <strong><a href="https://bulma.io/">Bulma</a></strong
+          >.
+        </p>
+      </div>
     </footer>
   </body>
 </html>

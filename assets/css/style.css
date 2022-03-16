@@ -1,6 +1,11 @@
 /*Using Bulma to assist with a lot of styling*/
 
 /*Nav Bar Styling*/
+.logo {
+  font-size: 2em;
+  padding: 10px 20px;
+}
+
 .navbar-item .button {
   border-color: rgba(255, 0, 0, 0);
 }
@@ -20,6 +25,12 @@
 
 #myDropdown a:hover {
   background-color: rgb(228, 162, 162);
+}
+
+/*Contact Section Styling*/
+.field-label {
+  /*Correction in form to overwrite a Bulma style*/
+  flex-grow: 0.4;
 }
 
 /*Helps hide/show navbar dropdown menu*/
