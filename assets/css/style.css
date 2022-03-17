@@ -27,10 +27,20 @@
   background-color: rgb(228, 162, 162);
 }
 
+/*Projects Section*/
+.content figure {
+  margin: 0;
+}
+
+.image.is-4by3 img {
+  object-fit: cover;
+  object-position: left top;
+}
+
 /*Contact Section Styling*/
 .field-label {
   /*Correction in form to overwrite a Bulma style*/
-  flex-grow: 0.4;
+  flex-grow: 0.5;
 }
 
 /*Helps hide/show navbar dropdown menu*/

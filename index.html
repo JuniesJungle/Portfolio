@@ -32,7 +32,7 @@
       aria-label="main navigation"
     >
       <div class="navbar-brand">
-        <a class="navbar-item logo">
+        <a class="navbar-item logo" rel="Home" href="#Banner">
           AC/JP
           <!--add href="" in <a> to link home-->
           <!--<img src="" width="112" height="28"> to add logo here-->
@@ -56,17 +56,17 @@
 
       <div class="navbar-menu">
         <div class="navbar-end">
-          <a class="navbar-item">
-            <button class="button" rel="Projects" href="">Projects</button></a
+          <a class="navbar-item" rel="Projects" href="#Projects">
+            <button class="button">Projects</button></a
           >
-          <a class="navbar-item">
-            <button class="button" rel="Skills" href="">Skills</button></a
+          <a class="navbar-item" rel="Skills" href="#Skills">
+            <button class="button">Skills</button></a
           >
-          <a class="navbar-item">
-            <button class="button" rel="About" href="">About</button></a
+          <a class="navbar-item" rel="About" href="#About">
+            <button class="button">About</button></a
           >
-          <a class="navbar-item">
-            <button class="button" rel="Contact" href="">Contact</button></a
+          <a class="navbar-item" rel="Contact" href="#Contact">
+            <button class="button">Contact</button></a
           >
           <div class="navbar-item">
             <a class="navbar-link dropdown button" onclick="myFunction()">
@@ -100,7 +100,7 @@
       if not, remove contentOut and change contentIn to just content-->
       <div class="contentIn">
         <!--Banner-->
-        <section class="hero is-fullheight is-primary">
+        <section id="Banner" class="hero is-fullheight is-primary">
           <div class="hero-body">
             <div class="container has-text-centered">
               <p class="title">Hi, I'm Abby!</p>
@@ -110,7 +110,7 @@
         </section>
 
         <!--Projects-->
-        <section class="hero is-large is-success">
+        <section id="Projects" class="hero is-small is-success">
           <div class="hero-body">
             <div class="container has-text-centered">
               <p class="title">Projects</p>
@@ -118,12 +118,127 @@
                 samples
                 <!--I'd like to add a fun thing to shuffle project pics/links-->
               </p>
+              <div class="content">
+                <table class="table has-background-success">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="card has-background-warning">
+                          <div class="card-image">
+                            <figure class="image is-4by3">
+                              <img src="./assets/images/Gathr.png" />
+                            </figure>
+                          </div>
+                          <div class="card-content">
+                            <div class="media">
+                              <div class="media-left"></div>
+                              <div class="media-content">
+                                <p class="is-4">Group Project</p>
+                              </div>
+                            </div>
+                            <div class="content">
+                              <a>Short project explanation.</a>
+                              <br />
+                              <a>Skills Used:</a>
+                              <br />
+                              <time datetime="2016-1-1"
+                                >11:09 PM - 1 Jan 2016</time
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="card has-background-warning">
+                          <div class="card-image">
+                            <figure class="image is-4by3">
+                              <img src="./assets/images/Venu.png" />
+                            </figure>
+                          </div>
+                          <div class="card-content">
+                            <div class="media">
+                              <div class="media-left"></div>
+                              <div class="media-content">
+                                <p class="is-4">Group Project</p>
+                              </div>
+                            </div>
+                            <div class="content">
+                              <a>Short project explanation.</a>
+                              <br />
+                              <a>Skills Used:</a>
+                              <br />
+                              <time datetime="2016-1-1"
+                                >11:09 PM - 1 Jan 2016</time
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="card has-background-warning">
+                          <div class="card-image">
+                            <figure class="image is-4by3">
+                              <img src="./assets/images/NoteTaker.png" />
+                            </figure>
+                          </div>
+                          <div class="card-content">
+                            <div class="media">
+                              <div class="media-left"></div>
+                              <div class="media-content">
+                                <p class="is-4">Solo Project</p>
+                              </div>
+                            </div>
+                            <div class="content">
+                              <a>Short project explanation.</a>
+                              <br />
+                              <a>Skills Used:</a>
+                              <br />
+                              <time datetime="2016-1-1"
+                                >11:09 PM - 1 Jan 2016</time
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="card has-background-warning">
+                          <div class="card-image">
+                            <figure class="image is-4by3">
+                              <img
+                                src="https://bulma.io/images/placeholders/1280x960.png"
+                                alt="Placeholder image"
+                              />
+                            </figure>
+                          </div>
+                          <div class="card-content">
+                            <div class="media">
+                              <div class="media-left"></div>
+                              <div class="media-content">
+                                <p class="is-4">Solo or who helped?</p>
+                              </div>
+                            </div>
+                            <div class="content">
+                              <a>Short project explanation.</a>
+                              <br />
+                              <a>Skills Used:</a>
+                              <br />
+                              <time datetime="2016-1-1"
+                                >11:09 PM - 1 Jan 2016</time
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </section>
 
         <!--Skills-->
-        <section class="hero is-large is-warning">
+        <section id="Skills" class="hero is-large is-warning">
           <div class="hero-body">
             <div class="container has-text-centered">
               <p class="title">Skills</p>
@@ -133,7 +248,7 @@
         </section>
 
         <!--About Me-->
-        <section class="hero is-large is-info">
+        <section id="About" class="hero is-large is-info">
           <div class="hero-body">
             <div class="container has-text-centered">
               <p class="title">About Me</p>
@@ -152,7 +267,7 @@
         </section>
 
         <!--Contact Me-->
-        <section class="hero is-medium is-dark">
+        <section id="Contact" class="hero is-medium is-dark">
           <div class="hero-body">
             <div class="container has-text-centered">
               <div class="columns">
@@ -185,7 +300,7 @@
                             class="control is-expanded has-icons-left has-icons-right"
                           >
                             <input
-                              class="input is-success"
+                              class="input"
                               type="email"
                               placeholder="Email"
                             />
@@ -283,7 +398,6 @@
             </div>
           </div>
         </section>
-        
       </div>
       <!--if I want to add something outside the main page elements, add extra div here-->
     </div>
@@ -291,11 +405,38 @@
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          Special Thanks to the creators of
-          <strong><a href="https://bulma.io/">Bulma</a></strong
+          This page is powered by coffee poured by
+          <strong
+            ><a class="has-text-primary" href="https://bulma.io/"
+              >BULMA</a
+            ></strong
           >.
         </p>
       </div>
     </footer>
   </body>
 </html>
+
+<!-- <div class="card">
+  <div class="card-image">
+    <figure class="image is-4by3">
+      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-left">
+      </div>
+      <div class="media-content">
+        <p class="is-4">Solo or who helped?</p>
+      </div>
+    </div>
+    <div class="content">
+      <a>Short project explanation.</a>
+      <br />
+      <a>Skills Used:</a>
+      <br />
+      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+    </div>
+  </div>
+</div> -->
