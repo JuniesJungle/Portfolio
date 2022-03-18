@@ -100,7 +100,7 @@
       if not, remove contentOut and change contentIn to just content-->
       <div class="contentIn">
         <!--Banner-->
-        <section id="Banner" class="hero is-fullheight is-primary">
+        <section id="Banner" class="hero is-fullheight is-dark">
           <div class="hero-body">
             <div class="container has-text-centered">
               <p class="title">Hi, I'm Abby!</p>
@@ -110,16 +110,12 @@
         </section>
 
         <!--Projects-->
-        <section id="Projects" class="hero is-small is-success">
+        <section id="Projects" class="hero is-medium">
           <div class="hero-body">
             <div class="container has-text-centered">
               <p class="title">Projects</p>
-              <p class="subtitle">
-                samples
-                <!--I'd like to add a fun thing to shuffle project pics/links-->
-              </p>
               <div class="content">
-                <table class="table has-background-success">
+                <table class="table">
                   <tbody>
                     <!--Need to re-work cards, I don't like the way they look-->
                     <tr>
@@ -163,7 +159,7 @@
         </section>
 
         <!--Skills-->
-        <section id="Skills" class="hero is-large is-warning">
+        <section id="Skills" class="hero is-medium">
           <div class="hero-body">
             <div class="container has-text-centered">
               <p class="title">Skills</p>
@@ -173,26 +169,34 @@
         </section>
 
         <!--About Me-->
-        <section id="About" class="hero is-large is-info">
+        <section id="About" class="hero is-small is-dark">
           <div class="hero-body">
             <div class="container has-text-centered">
               <p class="title">About Me</p>
-              <img src="https://via.placeholder.com/200" alt="Abby Castelow" />
-              <!-- Paragraph with embedded link -->
-              <!-- A short description of me and my professional stoof, save the life story for the About Me Page-->
+              <div class="columns">
+                <div class="column is-one-quarter">
+                  <img
+                    src="https://via.placeholder.com/200"
+                    alt="Abby Castelow"
+                  />
+                </div>
 
-              <p class="subtitle">
-                Hello! My name is Abby and I have a strong passion for learning
-                and am constantly finding new things to work on. I am on the
-                search to better myself and begin a career more in my field of
-                interest to work on programming.
-              </p>
+                <!-- A short description of me and my professional stoof, save the life story for the About Me Page-->
+                <div class="column">
+                  <p class="subtitle">
+                    Hello! My name is Abby and I have a strong passion for
+                    learning and am constantly finding new things to work on. I
+                    am on the search to better myself and begin a career more in
+                    my field of interest to work on programming.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
         <!--Contact Me-->
-        <section id="Contact" class="hero is-medium is-dark">
+        <section id="Contact" class="hero is-small is-dark">
           <div class="hero-body">
             <div class="container has-text-centered">
               <div class="columns">
@@ -308,17 +312,28 @@
                       >
                     </p>
                     <p id="GitHub">
-                      <strong>GitHub:</strong>
+                      <ion-icon name="logo-github"
+                        ><a
+                          href="https://github.com/JuniesJungle"
+                          target="_blank"
+                        ></a
+                      ></ion-icon>
                       <a href="https://github.com/JuniesJungle" target="_blank"
                         >JuniesJungle</a
                       >
                     </p>
                     <p id="LinkedIn">
-                      <strong>LinkedIn:</strong>
+                      <ion-icon name="logo-linkedin"
+                        ><a
+                          href="https://www.linkedin.com/in/abby-castelow/"
+                          target="_blank"
+                          >Abby Castelow</a
+                        ></ion-icon
+                      >
                       <a
                         href="https://www.linkedin.com/in/abby-castelow/"
                         target="_blank"
-                        >LinkedIn</a
+                        >Abby Castelow</a
                       >
                     </p>
                   </div>

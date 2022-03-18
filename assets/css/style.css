@@ -27,6 +27,11 @@
   background-color: rgb(228, 162, 162);
 }
 
+/*Helps hide/show navbar dropdown menu*/
+.show {
+  display: block;
+}
+
 /*Projects Section*/
 .content figure {
   margin: 0;
@@ -43,7 +48,13 @@
   flex-grow: 0.5;
 }
 
-/*Helps hide/show navbar dropdown menu*/
-.show {
-  display: block;
+#Contact .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*Footer*/
+.footer {
+  padding: 3rem 6rem;
 }
